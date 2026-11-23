@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-11-23 06:02:17">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>This is will help Developers to complete there Documentation Srum Task in less time</description>
+<inserted/>
+<name>Documentation</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>51fbd4a6c3fbc71476cbbecdd401312c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-23 06:02:17</sys_created_on>
+<sys_id>65f74ca0c330131076cbbecdd4013182</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-23 06:02:17</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_a9ed2f8fc32fcf50fc78fb377d0131ce</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Documentation&lt;/name&gt;&lt;onclick&gt;solve();&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function solve() {
+
+    var ga = new GlideAjax('DocumentUtils');
+
+    ga.addParam('sysparm_name', 'getDoc');
+    ga.addParam('sysparm_updatesetSysId', g_form.getUniqueValue());
+
+    // Summarising every captured record takes a few seconds - say so.
+    g_form.addInfoMessage('Generating documentation, please wait...');
+
+    ga.getXMLAnswer(function (answer) {
+
+        var result;
+
+        try {
+            result = JSON.parse(answer);
+        } catch (e) {
+            g_form.clearMessages();
+            g_form.addErrorMessage('Could not parse server response: ' + answer);
+            return;
+        }
+
+        g_form.clearMessages();
+
+        if (result.status == 'success') {
+
+            g_form.addInfoMessage(result.message);
+
+            var downloadUrl = result.download_url;
+
+            // Open generated Word document in new tab / download
+            window.open(downloadUrl, '_blank');
+
+            // Reload current form after delay
+            setTimeout(function () {
+                location.reload();
+            }, 2500);
+
+        } else {
+            g_form.addErrorMessage(result.message || 'Document generation failed.');
+        }
+
+    });
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-09-30 13:58:11&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a9ed2f8fc32fcf50fc78fb377d0131ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Documentation&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_a9ed2f8fc32fcf50fc78fb377d0131ce&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-10-10 19:44:29&lt;/sys_updated_on&gt;&lt;table&gt;sys_update_set&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>501810544</payload_hash>
+<remote_update_set display_value="Documentation">65f74ca0c330131076cbbecdd4013182</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-23 06:02:17</sys_created_on>
+<sys_id>25f74ca0c330131076cbbecdd4013184</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a127586f830000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-23 06:02:17</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Documentation</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>e03e98eaf3fbc7144495fc09a9e7da88</update_guid>
+<update_guid_history>e03e98eaf3fbc7144495fc09a9e7da88:501810544,9acc942adffbc714f831b3babfb9bd0d:688971735,6e9d74ed18bbcfd02284edf101af6226:501810544,f105ddf41a334f9051d23b0a4d43972e:-1334428500,3df41df4a9334f90c2dce97c59102fdf:1098055088,c754d5b4c9334f9008e90b655fafd859:776593328,4f3415f065334f9058709360da384fcf:203143789,05ff4d34b8ff0f90898e8d8b2a6202b6:620149665,35fb053c5fbf0f9000de2459233c2e49:1023997515,a4cfabcf242fcf50b8c397caa6230087:26274381,160fe74fe22bcf507da7e991eafa8d53:1535300351</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Inform">dc0f5e4007830110a4a2f7108c1ed060</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_1225091dc34c9f5476cbbecdd401316d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;PDF Rule: Test&lt;/name&gt;&lt;order&gt;1646&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) { new x_75740_inform.pdfutils().createPDF('228485d9c34c9f5476cbbecdd401316c', current); })(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-10-19 11:38:02&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1225091dc34c9f5476cbbecdd401316d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PDF Rule: Test&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inform" source="x_75740_inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_1225091dc34c9f5476cbbecdd401316d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-10-19 11:38:02&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=1225091dc34c9f5476cbbecdd401316d"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1577054073</payload_hash>
+<remote_update_set display_value="Documentation">65f74ca0c330131076cbbecdd4013182</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-23 06:02:17</sys_created_on>
+<sys_id>edf74ca0c330131076cbbecdd4013182</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a153f44f740000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-23 06:02:17</sys_updated_on>
+<table>incident</table>
+<target_name>PDF Rule: Test</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>ae25091d114c9f5420b741321e0fd571</update_guid>
+<update_guid_history>ae25091d114c9f5420b741321e0fd571:1577054073</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_e55c94e6c3fbc71476cbbecdd401313c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.DocumentUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Generates a Word document for an Update Set: one numbered development point per captured record, each followed by a snapshot of that record.&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;DocumentUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var DocumentUtils = Class.create();
+DocumentUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    getDoc: function() {
+        var updateSetSysId = this.getParameter('sysparm_updatesetSysId');
+
+        if (!updateSetSysId) {
+            return JSON.stringify({
+                status: 'error',
+                message: 'Update Set sys_id not received.'
+            });
+        }
+
+        return this.backendLogic(updateSetSysId);
+    },
+
+    backendLogic: function(updateSetSysId) {
+
+        var updateSet = new GlideRecord('sys_update_set');
+
+        if (!updateSet.get(updateSetSysId)) {
+            return JSON.stringify({
+                status: 'error',
+                message: 'Update Set not found.'
+            });
+        }
+
+        var instanceUrl = gs.getProperty('glide.servlet.uri');
+        var updateSetLink = instanceUrl + 'sys_update_set.do?sys_id=' + updateSetSysId;
+
+        var updates = [];
+
+        var updateXML = new GlideRecord('sys_update_xml');
+        updateXML.addQuery('update_set', updateSetSysId);
+        updateXML.addQuery('action', 'IN', 'INSERT_OR_UPDATE,DELETE');
+        updateXML.orderBy('sys_updated_on');
+        updateXML.query();
+
+        while (updateXML.next()) {
+
+            var updateName = updateXML.name.toString();
+
+            var tableName = '';
+            var recordSysId = '';
+
+            var match = updateName.match(/^(.+)_([0-9a-f]{32})$/);
+
+            // sys_script_include_e55c94e6c3fbc71476cbbecdd401313c
+            if (match) {
+                tableName = match[1];
+                recordSysId = match[2];
+            }
+
+            var targetName = updateXML.target_name.toString() || updateName;
+            var payload = updateXML.payload.toString();
+            var action = updateXML.action.toString();
+
+            var type = this.getReadableType(tableName, updateXML);
+            var readableAction = this.decideCreatedUpdatedDeleted(action, tableName, recordSysId, updateSetSysId, updateXML);
+
+            var recordLink = '';
+
+            if (tableName &amp;&amp; recordSysId &amp;&amp; readableAction != 'Deleted') {
+                recordLink = instanceUrl + tableName + '.do?sys_id=' + recordSysId;
+            }
+
+            var viewValue = '';
+
+            if (updateXML.isValidField('view')) {
+                viewValue = updateXML.view.getDisplayValue();
+            }
+
+            var recordDescription = this.getRecordDescription(tableName, recordSysId, payload);
+            var explanation = this.getSimpleExplanation(
+                readableAction,
+                type,
+                targetName,
+                recordDescription
+            );
+
+            updates.push({
+                action: readableAction,
+                type: type,
+                tableName: tableName,
+                targetName: targetName,
+                recordLink: recordLink,
+                view: viewValue,
+                explanation: explanation,
+            });
+        }
+
+        var html = '';
+
+        html += '&lt;html&gt;';
+        html += '&lt;head&gt;';
+        html += '&lt;meta charset="UTF-8"&gt;';
+        html += '&lt;style&gt;';
+
+        html += 'body {';
+        html += 'font-family: Calibri, Arial, sans-serif;';
+        html += 'font-size: 11pt;';
+        html += 'color: #1f1f1f;';
+        html += 'line-height: 1.4;';
+        html += 'margin: 36px;';
+        html += '}';
+
+        html += 'h1 {';
+        html += 'font-size: 20pt;';
+		html += 'text-align: center;';
+        html += 'color:#0b3b8c;';
+        html += 'font-weight: bold;';
+        html += 'margin-top: 0;';
+        html += 'margin-bottom: 6px;';
+        html += '}';
+
+        html += 'h2 {';
+        html += 'font-size: 13.5pt;';
+		html += 'text-align: center;';
+        html += 'color: #000000;';
+        html += 'font-weight: bold;';
+        html += 'margin-top: 24px;';
+        html += 'margin-bottom: 10px;';
+        html += 'border-bottom: 1px solid #bfbfbf;';
+        html += 'padding-bottom: 4px;';
+        html += '}';
+
+        html += 'h3 {';
+        html += 'font-size: 12pt;';
+        html += 'color: #000000;';
+        html += 'font-weight: bold;';
+        html += 'margin-top: 16px;';
+        html += 'margin-bottom: 6px;';
+        html += '}';
+
+        html += 'p {';
+        html += 'margin-top: 4px;';
+        html += 'margin-bottom: 6px;';
+        html += '}';
+
+        html += 'div {';
+        html += 'margin: 0;';
+        html += 'padding: 0;';
+        html += '}';
+
+        html += '.subtle {';
+        html += 'color: #666666;';
+        html += 'font-size: 9.5pt;';
+        html += 'margin-bottom: 18px;';
+        html += '}';
+
+        html += '.summary-box {';
+        html += 'background: none;';
+        html += 'border: none;';
+        html += 'padding: 0;';
+        html += 'margin-top: 8px;';
+        html += 'margin-bottom: 18px;';
+        html += '}';
+
+        html += '.field {';
+        html += 'margin-top: 5px;';
+        html += 'margin-bottom: 5px;';
+        html += '}';
+
+        html += '.label {';
+        html += 'font-weight: bold;';
+        html += 'color: #000000;';
+        html += '}';
+
+        html += '.change-card {';
+        html += 'background: none;';
+        html += 'border: none;';
+        html += 'padding: 0;';
+        html += 'margin-top: 18px;';
+        html += 'margin-bottom: 22px;';
+        html += '}';
+
+        html += '.explanation {';
+        html += 'background: none;';
+        html += 'border: none;';
+        html += 'padding: 0;';
+        html += 'margin-top: 8px;';
+        html += 'margin-bottom: 8px;';
+        html += '}';
+
+        html += 'a {';
+        html += 'color: #055bb0;';
+        html += 'text-decoration: underline;';
+        html += '}';
+
+        html += '&lt;/style&gt;';
+        html += '&lt;/head&gt;';
+
+        html += '&lt;body&gt;';
+
+        html += '&lt;h1&gt;' + this.escapeHtml(updateSet.name.toString()) + '&lt;/h1&gt;';
+        html += '&lt;div class="subtle"&gt;Generated on ' + this.escapeHtml(new GlideDateTime().getDisplayValue()) + '&lt;/div&gt;';
+
+        html += '&lt;h2&gt;Update Set Information&lt;/h2&gt;';
+        html += '&lt;div class="summary-box"&gt;';
+
+        html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Update Set Name:&lt;/span&gt; ';
+        html += this.escapeHtml(updateSet.name.toString()) + '&lt;/div&gt;';
+
+        html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Description:&lt;/span&gt;&lt;br/&gt;';
+        html += this.textToHtml(updateSet.description.toString()) + '&lt;/div&gt;';
+
+        html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Update Set Link:&lt;/span&gt; ';
+        html += '&lt;a href="' + this.escapeHtml(updateSetLink) + '"&gt;' + this.escapeHtml(updateSetLink) + '&lt;/a&gt;&lt;/div&gt;';
+
+        html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Application:&lt;/span&gt; ';
+        html += this.escapeHtml(updateSet.application.getDisplayValue()) + '&lt;/div&gt;';
+
+        html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Created On:&lt;/span&gt; ';
+        html += this.escapeHtml(updateSet.sys_created_on.getDisplayValue()) + '&lt;/div&gt;';
+
+        html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Created By:&lt;/span&gt; ';
+        html += this.escapeHtml(updateSet.sys_created_by.toString()) + '&lt;/div&gt;';
+
+        html += '&lt;/div&gt;';
+		html += '&lt;/br&gt;';
+
+        html += '&lt;h2&gt;Development Changes&lt;/h2&gt;';
+
+        if (updates.length == 0) {
+            html += '&lt;p&gt;No captured updates found in this Update Set.&lt;/p&gt;';
+        } else {
+            for (var i = 0; i &lt; updates.length; i++) {
+                var item = updates[i];
+
+                html += '&lt;div class="change-card"&gt;';
+
+                html += '&lt;h3&gt;' + (i + 1) + '. ' + this.escapeHtml(item.targetName) + '&lt;/h3&gt;';
+
+                html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Action:&lt;/span&gt; ';
+                html += this.escapeHtml(item.action) + '&lt;/div&gt;';
+
+                html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Type:&lt;/span&gt; ';
+                html += this.escapeHtml(item.type) + '&lt;/div&gt;';
+
+                html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Target Name:&lt;/span&gt; ';
+                html += this.escapeHtml(item.targetName) + '&lt;/div&gt;';
+
+                html += '&lt;div class="explanation"&gt;';
+                html += '&lt;span class="label"&gt;Explanation:&lt;/span&gt;&lt;br/&gt;';
+                html += this.textToHtml(item.explanation);
+                html += '&lt;/div&gt;';
+
+                if (item.recordLink) {
+                    html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Record Link:&lt;/span&gt; ';
+                    html += '&lt;a href="' + this.escapeHtml(item.recordLink) + '"&gt;Open Record&lt;/a&gt;';
+                    html += '&lt;br/&gt;&lt;span class="subtle"&gt;' + this.escapeHtml(item.recordLink) + '&lt;/span&gt;&lt;/div&gt;';
+                } else {
+                    html += '&lt;div class="field"&gt;&lt;span class="label"&gt;Record Link:&lt;/span&gt; Not available';
+                    if (item.action == 'Deleted') {
+                        html += ' because this record was deleted.';
+                    }
+                    html += '&lt;/div&gt;';
+                }
+
+                if (item.view) {
+                    html += '&lt;div class="field"&gt;&lt;span class="label"&gt;View:&lt;/span&gt; ';
+                    html += this.escapeHtml(item.view) + '&lt;/div&gt;';
+                }
+
+                html += '&lt;/div&gt;';
+            }
+        }
+
+        html += '&lt;/body&gt;';
+        html += '&lt;/html&gt;';
+
+       var fileName = this.cleanFileName(updateSet.name.toString() + ' (Documentation)') + '.docx';
+
+		var attachment = new GlideSysAttachment();
+
+		var attachmentSysId = attachment.write(
+			updateSet,
+			fileName,
+			'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+			html
+		);
+
+        if (!attachmentSysId) {
+            return JSON.stringify({
+                status: 'error',
+                message: 'Document attachment could not be created.'
+            });
+        }
+
+        var downloadLink = instanceUrl + 'sys_attachment.do?sys_id=' + attachmentSysId;
+
+        return JSON.stringify({
+            status: 'success',
+            message: 'Document generated successfully.',
+            attachment_sys_id: attachmentSysId,
+            download_url: downloadLink
+        });
+    },
+
+    decideCreatedUpdatedDeleted: function(action, tableName, recordSysId, updateSetSysId, updateXML) {
+
+        if (action == 'DELETE') {
+            return 'Deleted';
+        }
+
+        if (action != 'INSERT_OR_UPDATE') {
+            return this.getReadableAction(action);
+        }
+
+        var updateName = '';
+
+        if (updateXML) {
+            updateName = updateXML.name.toString();
+        }
+
+        if (!updateName &amp;&amp; tableName &amp;&amp; recordSysId) {
+            updateName = tableName + '_' + recordSysId;
+        }
+
+        if (!updateName) {
+            return 'Created / Updated';
+        }
+
+        var version = new GlideRecord('sys_update_version');
+        version.addQuery('name', updateName);
+        version.orderBy('sys_created_on');
+        version.query();
+
+        while (version.next()) {
+
+            var sourceSysId = '';
+
+            if (version.isValidField('source')) {
+                sourceSysId = version.source.toString();
+            }
+
+            if (sourceSysId != updateSetSysId) {
+                return 'Updated';
+            }
+        }
+
+        return 'Created';
+    },
+
+    getReadableAction: function(action) {
+        if (!action) {
+            return 'Changed';
+        }
+
+        if (action == 'INSERT_OR_UPDATE') {
+            return 'Created / Updated';
+        }
+
+        if (action == 'DELETE') {
+            return 'Deleted';
+        }
+
+        return action;
+    },
+
+    getReadableType: function(tableName, updateXML) {
+
+        if (updateXML &amp;&amp; updateXML.isValidField('type')) {
+            var updateXmlType = updateXML.type.toString();
+
+            if (updateXmlType) {
+                return updateXmlType;
+            }
+        }
+
+        if (tableName == 'sys_script') {
+            return 'Business Rule';
+        } else if (tableName == 'sys_script_include') {
+            return 'Script Include';
+        } else if (tableName == 'sys_ui_action') {
+            return 'UI Action';
+        } else if (tableName == 'sys_script_client') {
+            return 'Client Script';
+        } else if (tableName == 'sys_ui_policy') {
+            return 'UI Policy';
+        } else if (tableName == 'sysevent_email_action') {
+            return 'Email Notification';
+        } else if (tableName == 'sys_script_email') {
+            return 'Email Script';
+        } else if (tableName == 'sysevent_register') {
+            return 'Event Registry';
+        } else if (tableName == 'sys_dictionary') {
+            return 'Dictionary Entry';
+        } else if (tableName == 'sys_choice') {
+            return 'Choice List';
+        } else if (tableName == 'sys_properties') {
+            return 'System Property';
+        } else if (tableName == 'sys_ui_form') {
+            return 'Form Layout';
+        } else if (tableName == 'sys_ui_section') {
+            return 'Form Section';
+        } else if (tableName == 'sys_ui_list') {
+            return 'List Layout';
+        } else if (tableName == 'wf_workflow') {
+            return 'Workflow';
+        } else if (tableName == 'sys_hub_flow') {
+            return 'Flow';
+        } else if (tableName == 'sys_hub_action_type_definition') {
+            return 'Flow Action';
+        } else if (tableName == 'sysauto_script') {
+            return 'Scheduled Script Execution';
+        } else if (tableName == 'sys_ui_page') {
+            return 'UI Page';
+        } else if (tableName == 'sys_ui_macro') {
+            return 'UI Macro';
+        }
+
+        return tableName || 'Configuration Record';
+    },
+
+    getRecordDescription: function(tableName, recordSysId, payload) {
+
+        if (tableName &amp;&amp; recordSysId) {
+            try {
+                var gr = new GlideRecord(tableName);
+
+                if (gr.isValid() &amp;&amp; gr.get(recordSysId)) {
+
+                    if (gr.isValidField('description') &amp;&amp; gr.description.toString()) {
+                        return gr.description.toString();
+                    }
+
+                    if (gr.isValidField('short_description') &amp;&amp; gr.short_description.toString()) {
+                        return gr.short_description.toString();
+                    }
+
+                    if (gr.isValidField('comments') &amp;&amp; gr.comments.toString()) {
+                        return gr.comments.toString();
+                    }
+                }
+            } catch (e) {
+                // Ignore and try payload below
+            }
+        }
+
+        var desc = this.getPayloadValue(payload, 'description');
+
+        if (desc) {
+            return desc;
+        }
+
+        desc = this.getPayloadValue(payload, 'short_description');
+
+        if (desc) {
+            return desc;
+        }
+
+        desc = this.getPayloadValue(payload, 'comments');
+
+        if (desc) {
+            return desc;
+        }
+
+        return '';
+    },
+
+    getSimpleExplanation: function(action, type, targetName, description) {
+
+        var explanation = '';
+
+        if (action == 'Created') {
+            explanation += 'Created a new ' + type + ' named "' + targetName + '".';
+        } else if (action == 'Updated') {
+            explanation += 'Updated the existing ' + type + ' named "' + targetName + '".';
+        } else if (action == 'Deleted') {
+            explanation += 'Deleted the ' + type + ' named "' + targetName + '".';
+        } else {
+            explanation += action + ' the ' + type + ' named "' + targetName + '".';
+        }
+
+        if (description) {
+            explanation += '\nDescription: ' + description;
+        }
+
+        return explanation;
+    },
+
+    getPayloadValue: function(payload, tagName) {
+
+        if (!payload || !tagName) {
+            return '';
+        }
+
+        try {
+            var regex = new RegExp('&lt;' + tagName + '[^&gt;]*&gt;([\\s\\S]*?)&lt;\\/' + tagName + '&gt;', 'i');
+            var match = payload.match(regex);
+
+            if (match &amp;&amp; match[1]) {
+                var value = match[1];
+
+                value = value.replace(/^&lt;!\[CDATA\[/, '');
+                value = value.replace(/\]\]&gt;$/, '');
+
+                return value;
+            }
+        } catch (e) {
+            return '';
+        }
+
+        return '';
+    },
+
+    textToHtml: function(text) {
+        if (text === null || text === undefined || text === '') {
+            return '';
+        }
+
+        text = '' + text;
+        text = GlideStringUtil.escapeHTML(text);
+
+        return text.split('\n').join('&lt;br/&gt;');
+    },
+
+    cleanFileName: function(name) {
+        if (!name) {
+            return 'Update Set Documentation';
+        }
+
+        name = '' + name;
+
+        var invalidChars = ['\\', '/', ':', '*', '?', '"', '&lt;', '&gt;', '|'];
+
+        for (var i = 0; i &lt; invalidChars.length; i++) {
+            name = name.split(invalidChars[i]).join('-');
+        }
+
+        return name;
+    },
+
+    escapeHtml: function(value) {
+        if (value === null || value === undefined) {
+            return '';
+        }
+
+        value = '' + value;
+
+        return GlideStringUtil.escapeHTML(value);
+    },
+
+
+
+    type: 'DocumentUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-10-10 19:36:22&lt;/sys_created_on&gt;&lt;sys_id&gt;e55c94e6c3fbc71476cbbecdd401313c&lt;/sys_id&gt;&lt;sys_mod_count&gt;23&lt;/sys_mod_count&gt;&lt;sys_name&gt;DocumentUtils&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_e55c94e6c3fbc71476cbbecdd401313c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-10-22 09:07:56&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1872675395</payload_hash>
+<remote_update_set display_value="Documentation">65f74ca0c330131076cbbecdd4013182</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-23 06:02:17</sys_created_on>
+<sys_id>edf74ca0c330131076cbbecdd4013183</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a162ddf83f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-23 06:02:17</sys_updated_on>
+<table/>
+<target_name>DocumentUtils</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>c59f7342aa489794786e77a299d04d0b</update_guid>
+<update_guid_history>c59f7342aa489794786e77a299d04d0b:-1872675395,0a3f4bae22b34b1422408221ebe8983f:2061134093,2bee032efdb34b141afc6fa420877c96:-38575184,12aec32e32b34b145a54ecee3c13e1f4:1730139800,64cd87ea74b34b14fc7eecc7f46561a0:-1905514460,260dc3aaf4b34b148c281601a7825908:228914383,23ec8b6a16b34b148f9b42185d75909b:-1253155585,d85ccb2a3ab34b149cb7c06ae97a791f:230373568,2b3c0b2a33b34b1418ec1630372b1b10:2046367159,ee1b0b66fcb34b1435e8f86ec8ad4c7c:-135731129,0c794ba2c0b34b143844fb1a7601f11e:1244126,c9e84f22ebb34b14fd76c346e7353193:-551458009,ac48c7ee03734b14cdbef97a59db3dd1:-1992781356,d927436e79734b14340dfa2285041bac:908490138,afe4c32a1f734b14ab99eedae12369ee:-1095337299,e1ba7e2236334b14321341672028582c:1024167369,89c93a6226bf0b14311de905c7a39fe0:-1912848490,c10732e60dff0b14b8bbb3e8f0fc12c6:1682250817,c8a5f2268bff0b148cc5740e19c5ff41:1956952856,f852726ecfbf0b14ad9955b7a1e311f5:2115403948,1c01ba6ae3bf0b14d8783912b55040d8:-630932384,02903a6ad7bf0b14a4699017e70e0024:-1982982210,2a1fa6a6cbbf0b146be4db94a586d827:797527004,a15c94e6b7fbc714b654a8dca848ae43:-248884791</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
