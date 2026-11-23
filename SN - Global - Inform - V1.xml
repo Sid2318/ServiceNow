@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2023-03-27 11:08:24">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>SN - Global - Inform - V1</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>f3d94fea2fe9e510d12470682799b6eb</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-03-27 11:08:23</sys_created_on>
+<sys_id>3168b3c62f79e150d12470682799b629</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-03-27 11:08:23</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Inform">dc0f5e4007830110a4a2f7108c1ed060</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_33e0e7ee2f2de510d12470682799b6a3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="DELETE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;PDF Rule: incident_pdf&lt;/name&gt;&lt;order&gt;1646&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) { new x_75740_inform.pdfutils().createPDF('4601e62a2f69e510d12470682799b692', current); })(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-16 12:27:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;33e0e7ee2f2de510d12470682799b6a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PDF Rule: incident_pdf&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inform" source="x_75740_inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_33e0e7ee2f2de510d12470682799b6a3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-16 12:27:07&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=33e0e7ee2f2de510d12470682799b6a3"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1624864781</payload_hash>
+<remote_update_set display_value="SN - Global - Inform - V1">3168b3c62f79e150d12470682799b629</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-03-27 11:08:23</sys_created_on>
+<sys_id>3568b3c62f79e150d12470682799b629</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>186ea75c5180000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-03-27 11:08:23</sys_updated_on>
+<table>incident</table>
+<target_name>PDF Rule: incident_pdf</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>0e8563e2246de510c2691037e0cea0d3</update_guid>
+<update_guid_history>0e8563e2246de510c2691037e0cea0d3:-1624864781,c0f0e7eef42de510662904bfc310bda5:-2034680089</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Inform">dc0f5e4007830110a4a2f7108c1ed060</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_b86d5bea2f2de510d12470682799b6b8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;PDF Rule: incident_pdf&lt;/name&gt;&lt;order&gt;1646&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) { new x_75740_inform.pdfutils().createPDF('4601e62a2f69e510d12470682799b692', current); })(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-16 12:11:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b86d5bea2f2de510d12470682799b6b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PDF Rule: incident_pdf&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inform" source="x_75740_inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_b86d5bea2f2de510d12470682799b6b8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-16 12:11:37&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=b86d5bea2f2de510d12470682799b6b8"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>218533875</payload_hash>
+<remote_update_set display_value="SN - Global - Inform - V1">3168b3c62f79e150d12470682799b629</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-03-27 11:08:23</sys_created_on>
+<sys_id>3568b3c62f79e150d12470682799b62a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>186ea5535000000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-03-27 11:08:23</sys_updated_on>
+<table>incident</table>
+<target_name>PDF Rule: incident_pdf</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>416d5bea412de510116426c16b7b9ebb</update_guid>
+<update_guid_history>416d5bea412de510116426c16b7b9ebb:218533875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Inform">dc0f5e4007830110a4a2f7108c1ed060</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_879563262f6de510d12470682799b6c0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;PDF Rule: incident_pdf&lt;/name&gt;&lt;order&gt;1646&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) { new x_75740_inform.pdfutils().createPDF('4601e62a2f69e510d12470682799b692', current); })(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-16 12:47:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;879563262f6de510d12470682799b6c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PDF Rule: incident_pdf&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inform" source="x_75740_inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_879563262f6de510d12470682799b6c0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-16 12:47:33&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=879563262f6de510d12470682799b6c0"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2034680089</payload_hash>
+<remote_update_set display_value="SN - Global - Inform - V1">3168b3c62f79e150d12470682799b629</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-03-27 11:08:23</sys_created_on>
+<sys_id>7168b3c62f79e150d12470682799b62a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>186ea7619ac0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-03-27 11:08:23</sys_updated_on>
+<table>incident</table>
+<target_name>PDF Rule: incident_pdf</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>5b9563266a6de510371076e726dc81c2</update_guid>
+<update_guid_history>5b9563266a6de510371076e726dc81c2:-2034680089</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_886fc7222f2de510d12470682799b626</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.informUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;informUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var informUtils = Class.create();
+informUtils.prototype = {
+	
+	initialize : function() {
+	},
+	
+	insertRule : function(current, name, order, script) {
+		var gr = new GlideRecord("sys_script");
+		gr.initialize();
+		gr.setValue("name", name);
+		gr.setValue("collection", current.getValue("table"));
+		gr.setValue("order", order);
+		gr.setValue("when", "async_always");
+		gr.setValue("action_insert", true);
+		gr.setValue("action_update", true);
+		gr.setValue("script", script);
+		gr.setValue("sys_scope", gs.getProperty("x_75740_inform.application_id"));
+		gr.insert();
+		return gr.getValue("sys_id");
+	},
+	
+	deleteRule : function(current) {
+		var gr = new GlideRecord("sys_script");
+		gr.addEncodedQuery("sys_id=" + current.getValue("rule_for_generating_file"));
+		gr.query();
+		if(gr.next()) {
+			gr.deleteRecord();
+		}
+	},
+	
+	insertSchedule : function(current, name, script) {
+		var gr = new GlideRecord("sysauto_script");
+		gr.initialize();
+		gr.setValue("name", name);
+		gr.setValue("sys_scope", gs.getProperty("x_75740_inform.application_id"));
+		gr.setValue("run_type", current.getValue("run"));
+		gr.setValue("run_time", current.getValue("time"));
+		gr.setValue("script", script);
+		gr.insert();
+		return gr.getValue("sys_id");
+	},
+	
+	deleteSchedule : function(current) {
+		var gr = new GlideRecord("sysauto_script");
+		gr.addEncodedQuery("sys_id=" + current.getValue("rule_for_scheduled_execution"));
+		gr.query();
+		if(gr.next()) {
+			gr.deleteRecord();
+		}
+	},
+	
+	createZIP : function(template, current, fileName) {		
+		var encData = "";
+		var attachments = new GlideRecord("sys_attachment");
+		attachments.addEncodedQuery("table_sys_id=" + current.getValue("sys_id"));
+		attachments.query();
+		while(attachments.next()) {
+			var sa = new GlideSysAttachment();
+			var binData = sa.getBytes(attachments);
+			var zipBinData = this._addBytesToZip(attachments.file_name, binData);
+			encData = GlideStringUtil.base64Encode(zipBinData);
+		}
+		
+		var gsa = new GlideSysAttachment();
+		var result = gsa.write(current, fileName, "application/zip", zipBinData);
+		return result;
+	},
+	
+	_addBytesToZip : function(fileName, stream) {
+		var outStream = Packages.java.io.ByteArrayOutputStream();
+		var out = new Packages.java.util.zip.ZipOutputStream(outStream);
+		out.putNextEntry(new Packages.java.util.zip.ZipEntry(fileName));
+		out.write(stream, 0, stream.length);
+		out.closeEntry();
+		out.close();
+		return outStream.toByteArray();
+	},
+	
+	type : 'informUtils'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-16 11:12:45&lt;/sys_created_on&gt;&lt;sys_id&gt;886fc7222f2de510d12470682799b626&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;informUtils&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_886fc7222f2de510d12470682799b626&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-16 15:17:29&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1558829266</payload_hash>
+<remote_update_set display_value="SN - Global - Inform - V1">3168b3c62f79e150d12470682799b629</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-03-27 11:08:23</sys_created_on>
+<sys_id>7d68b3c62f79e150d12470682799b62a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>186eaff5b7a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-03-27 11:08:23</sys_updated_on>
+<table/>
+<target_name>informUtils</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>d3e780324bede51020db8817e9aee062</update_guid>
+<update_guid_history>d3e780324bede51020db8817e9aee062:1558829266,c9b58cfe8eade510ed013a05ae9817e8:2124218316,5fa38c7ee0ade510fc449bec675da15b:-1993908330,cc297366c3ade510757d2aef419dfb77:268435920,82c8bf26b6ade510d4c824b48eaddfe7:-1129416368,7f883762b5ade51009478836f52338ff:-180073124,be08f72689ade51074c2e04a63e78e0f:1359953331,8a27bbee446de510e4fc3017d0a96644:716612083,cd5fe72e536de510efb0964d564f0351:1791046626,7f00ebae452de5105b91a8d4ae6f91c0:-1437201253,f2dd9f2e3b2de510130e88d39c545406:494874039,66abdfaa2c2de510697b25e67ecaf3ce:919560141,3fea536acb2de510c25daf7454b24af5:1922583548,0a485fa61c2de510edc204c3a55552ac:1517668744,bcf65fa6f72de510e98c095924881237:-2054238521,eaef8bea5be9e510b531917d8e90bfa8:1084476765</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Inform">dc0f5e4007830110a4a2f7108c1ed060</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_ed9d2baa2f6de510d12470682799b61b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;ZIP Rule: Incident_ZIP&lt;/name&gt;&lt;order&gt;26916&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) { new x_75740_inform.ziputils().createZIP('345da7ea2f6de510d12470682799b6ae', current); })(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-16 13:22:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ed9d2baa2f6de510d12470682799b61b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ZIP Rule: Incident_ZIP&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inform" source="x_75740_inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_ed9d2baa2f6de510d12470682799b61b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-16 13:22:24&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=ed9d2baa2f6de510d12470682799b61b"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-8221207</payload_hash>
+<remote_update_set display_value="SN - Global - Inform - V1">3168b3c62f79e150d12470682799b629</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-03-27 11:08:23</sys_created_on>
+<sys_id>b968b3c62f79e150d12470682799b62a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>186ea9602700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-03-27 11:08:23</sys_updated_on>
+<table>incident</table>
+<target_name>ZIP Rule: Incident_ZIP</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>719d2baa5f6de51043d5eea05544971e</update_guid>
+<update_guid_history>719d2baa5f6de51043d5eea05544971e:-8221207</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Inform">dc0f5e4007830110a4a2f7108c1ed060</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_5fbc132e2f2de510d12470682799b666</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;PDF Rule: incident_pdf&lt;/name&gt;&lt;order&gt;1646&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) { new x_75740_inform.pdfutils().createPDF('4601e62a2f69e510d12470682799b692', current); })(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-16 12:08:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5fbc132e2f2de510d12470682799b666&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PDF Rule: incident_pdf&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inform" source="x_75740_inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_5fbc132e2f2de510d12470682799b666&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-16 12:08:47&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5fbc132e2f2de510d12470682799b666"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>218533875</payload_hash>
+<remote_update_set display_value="SN - Global - Inform - V1">3168b3c62f79e150d12470682799b629</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-03-27 11:08:23</sys_created_on>
+<sys_id>bd68b3c62f79e150d12470682799b629</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>186ea529b960000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-03-27 11:08:23</sys_updated_on>
+<table>incident</table>
+<target_name>PDF Rule: incident_pdf</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>17bc132e2c2de5108790cb602c136d69</update_guid>
+<update_guid_history>17bc132e2c2de5108790cb602c136d69:218533875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Inform">dc0f5e4007830110a4a2f7108c1ed060</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_d1cbdfaa2f2de510d12470682799b6d2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;PDF Rule: incident_pdf&lt;/name&gt;&lt;order&gt;1646&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) { new x_75740_inform.pdfutils().createPDF('4601e62a2f69e510d12470682799b692', current); })(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-16 12:04:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d1cbdfaa2f2de510d12470682799b6d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PDF Rule: incident_pdf&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inform" source="x_75740_inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_d1cbdfaa2f2de510d12470682799b6d2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-16 12:04:33&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d1cbdfaa2f2de510d12470682799b6d2"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>218533875</payload_hash>
+<remote_update_set display_value="SN - Global - Inform - V1">3168b3c62f79e150d12470682799b629</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-03-27 11:08:23</sys_created_on>
+<sys_id>f568b3c62f79e150d12470682799b62a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>186ea4ebd470000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-03-27 11:08:23</sys_updated_on>
+<table>incident</table>
+<target_name>PDF Rule: incident_pdf</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>21cb93ea402de51033d5a02b889d1174</update_guid>
+<update_guid_history>21cb93ea402de51033d5a02b889d1174:218533875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Inform">dc0f5e4007830110a4a2f7108c1ed060</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_53fd5bea2f2de510d12470682799b6fa</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="DELETE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;PDF Rule: incident_pdf&lt;/name&gt;&lt;order&gt;1646&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) { new x_75740_inform.pdfutils().createPDF('4601e62a2f69e510d12470682799b692', current); })(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-16 12:14:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;53fd5bea2f2de510d12470682799b6fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PDF Rule: incident_pdf&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Inform" source="x_75740_inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inform"&gt;dc0f5e4007830110a4a2f7108c1ed060&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_53fd5bea2f2de510d12470682799b6fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-16 12:14:14&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=53fd5bea2f2de510d12470682799b6fa"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1085946369</payload_hash>
+<remote_update_set display_value="SN - Global - Inform - V1">3168b3c62f79e150d12470682799b629</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2023-03-27 11:08:23</sys_created_on>
+<sys_id>f968b3c62f79e150d12470682799b629</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>186ea62a8180000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2023-03-27 11:08:23</sys_updated_on>
+<table>incident</table>
+<target_name>PDF Rule: incident_pdf</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>04c02fee982de5105837fdae916bb098</update_guid>
+<update_guid_history>04c02fee982de5105837fdae916bb098:-1085946369,53fd536e252de510d627cdc03947efd7:218533875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
